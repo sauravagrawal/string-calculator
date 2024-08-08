@@ -15,3 +15,7 @@ test("returns the sum of two numbers separated by a comma", () => {
 test("returns the sum of multiple numbers separated by commas", () => {
   expect(calculator.add("1,2,3,4")).toBe(10);
 });
+
+test("returns the sum of numbers separated by commas or new lines", () => {
+  expect(calculator.add("1\n2,3")).toBe(6);
+});
